@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Pedido - Pizza Deliciosa</title>
+    <style>
+        body {
+            background-image: url(imagens/pizza3.jpg);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+      
+
+        a{
+            text-decoration: none;
+            padding: 8px;
+            background-color:black;
+            border-radius: 4px;
+            padding: 5px 100px;
+            box-shadow: 2px 2px 4px blue(0, 0%, 0%, 0.1);
+            transition: all .2s;
+            color: #fff;
+            font-weight: 999;
+        }
+        a:hover{
+            box-shadow: 5px 7px 18px #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fazer Pedido - Pizza Delicía</h1>
+    </header>
+
+    <section id="pedido-form">
+        <h2>Faça seu pedido</h2>
+        <form action="processar_pedido.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="endereco">Endereço:</label>
+            <textarea id="endereco" name="endereco" required></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <a href="index.html">Voltar para a Página Inicial</a>
+
+   
+
+
+</body>
+</html>
